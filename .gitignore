@@ -1,0 +1,15 @@
+*.sql
+*.dev.properties
+.idea/
+.git/
+runtime/
+public/download/
+vendor/
+.phpintel/
+.env
+.DS_Store
+.phpunit*
+*.cache
+composer.lock
+dump.rdb
+.history/
