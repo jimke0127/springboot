@@ -90,6 +90,7 @@ public class DatabaseBakService {
 		try {
 			String filename = dbName + "_" + StringUtil.getFormatterDate(new Date(), "yyyyMMddHHmmss") + ".sql";
 			String cmd = "mysqldump -u"+dbUsername+" -p"+dbPwd+" "+dbName+" -r " + backUpDir + filename;
+			log.info(cmd);
 			Runtime.getRuntime().exec(cmd);
 			DatabaseBak databaseBak = new DatabaseBak();
 			databaseBak.setFilename(filename);
